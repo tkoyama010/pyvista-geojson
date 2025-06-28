@@ -1,0 +1,71 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.4330, 37.7880],
+          [-122.4330, 37.7680],
+          [-122.4130, 37.7680],
+          [-122.4130, 37.7880],
+          [-122.4330, 37.7880]
+        ]]
+      },
+      "properties": {
+        "name": "Golden Gate Park",
+        "type": "park",
+        "area": 1013,
+        "height": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.4194, 37.7849],
+          [-122.4194, 37.7649],
+          [-122.3994, 37.7649],
+          [-122.3994, 37.7849],
+          [-122.4194, 37.7849]
+        ]]
+      },
+      "properties": {
+        "name": "Financial District",
+        "type": "commercial",
+        "area": 400,
+        "height": 150
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[
+            [-122.4094, 37.7949],
+            [-122.4094, 37.7849],
+            [-122.3994, 37.7849],
+            [-122.3994, 37.7949],
+            [-122.4094, 37.7949]
+          ]],
+          [[
+            [-122.4294, 37.7949],
+            [-122.4294, 37.7849],
+            [-122.4194, 37.7849],
+            [-122.4194, 37.7949],
+            [-122.4294, 37.7949]
+          ]]
+        ]
+      },
+      "properties": {
+        "name": "Twin Towers Complex",
+        "type": "residential",
+        "area": 200,
+        "height": 100
+      }
+    }
+  ]
+}

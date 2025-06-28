@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4194, 37.7749]
+      },
+      "properties": {
+        "name": "City Center",
+        "category": "landmark",
+        "importance": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.4194, 37.7749],
+          [-122.4194, 37.8049],
+          [-122.3894, 37.8049]
+        ]
+      },
+      "properties": {
+        "name": "Main Street",
+        "category": "road",
+        "importance": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.4094, 37.7849],
+          [-122.4094, 37.7649],
+          [-122.3894, 37.7649],
+          [-122.3894, 37.7849],
+          [-122.4094, 37.7849]
+        ]]
+      },
+      "properties": {
+        "name": "Central Plaza",
+        "category": "building",
+        "importance": 7,
+        "floors": 25
+      }
+    }
+  ]
+}

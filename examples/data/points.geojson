@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4194, 37.7749]
+      },
+      "properties": {
+        "name": "San Francisco",
+        "population": 873965,
+        "elevation": 52
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.2437, 34.0522]
+      },
+      "properties": {
+        "name": "Los Angeles",
+        "population": 3898747,
+        "elevation": 87
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.4944, 38.5816]
+      },
+      "properties": {
+        "name": "Sacramento",
+        "population": 513624,
+        "elevation": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-117.1611, 32.7157]
+      },
+      "properties": {
+        "name": "San Diego",
+        "population": 1386932,
+        "elevation": 19
+      }
+    }
+  ]
+}
