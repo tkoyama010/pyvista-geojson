@@ -14,8 +14,8 @@ def main():
     reader = GeoJSONReader("data/mixed_geometries.geojson")
     mesh = reader.read()
 
-    # Create a plotter and add the mesh
-    plotter = pv.Plotter()
+    # Create a plotter and add the mesh (off-screen)
+    plotter = pv.Plotter(off_screen=True)
     plotter.add_mesh(mesh, show_edges=True, line_width=2)
     
     # Add labels for features if they have names
@@ -30,8 +30,9 @@ def main():
     plotter.camera_position = "xy"
     plotter.show_axes()
     
-    # Display the plot
-    plotter.show()
+    # Save the plot as an image
+    plotter.screenshot("basic_usage_output.png")
+    print("Saved plot to basic_usage_output.png")
 
 
 def simple_visualization():
@@ -39,7 +40,11 @@ def simple_visualization():
     # Load and display in just a few lines
     reader = GeoJSONReader("data/points.geojson")
     mesh = reader.read()
-    mesh.plot(show_edges=True, point_size=10)
+    
+    plotter = pv.Plotter(off_screen=True)
+    plotter.add_mesh(mesh, show_edges=True, point_size=10)
+    plotter.screenshot("simple_visualization_output.png")
+    print("Saved plot to simple_visualization_output.png")
 
 
 if __name__ == "__main__":

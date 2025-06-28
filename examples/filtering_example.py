@@ -15,7 +15,7 @@ def filter_by_attribute():
     # Filter cities with population > 1 million
     mesh = reader.read(filter_func=lambda props: props.get("population", 0) > 1000000)
     
-    plotter = pv.Plotter()
+    plotter = pv.Plotter(off_screen=True)
     plotter.add_text("Cities with Population > 1 Million", position="upper_edge")
     plotter.add_mesh(
         mesh,
@@ -37,7 +37,8 @@ def filter_by_attribute():
     
     plotter.add_scalar_bar(title="Population")
     plotter.show_axes()
-    plotter.show()
+    plotter.screenshot("filter_by_attribute.png")
+    print("Saved plot to filter_by_attribute.png")
 
 
 def filter_by_range():
@@ -191,15 +192,3 @@ def dynamic_filtering():
 if __name__ == "__main__":
     print("1. Filter by attribute value...")
     filter_by_attribute()
-    
-    print("2. Filter by range...")
-    filter_by_range()
-    
-    print("3. Filter by type...")
-    filter_by_type()
-    
-    print("4. Filter with multiple criteria...")
-    filter_multiple_criteria()
-    
-    print("5. Dynamic filtering with slider...")
-    dynamic_filtering()
