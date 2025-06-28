@@ -8,6 +8,7 @@ dependencies = [
     "pyvista>=0.40.0",
     "numpy>=1.20.0",
     "jupyterlab",
+    "jupytext>=1.17.1",
 ]
 
 [build-system]
