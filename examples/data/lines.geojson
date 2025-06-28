@@ -1,0 +1,58 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.4194, 37.7749],
+          [-121.8863, 37.3382],
+          [-121.4944, 38.5816]
+        ]
+      },
+      "properties": {
+        "name": "Highway 101",
+        "type": "highway",
+        "lanes": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-118.2437, 34.0522],
+          [-117.9189, 33.8121],
+          [-117.1611, 32.7157]
+        ]
+      },
+      "properties": {
+        "name": "Interstate 5",
+        "type": "interstate",
+        "lanes": 6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-122.4194, 37.7749],
+            [-122.2708, 37.8044]
+          ],
+          [
+            [-122.2708, 37.8044],
+            [-122.2238, 37.4852]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Bay Area Transit",
+        "type": "transit",
+        "lanes": 2
+      }
+    }
+  ]
+}
